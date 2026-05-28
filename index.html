@@ -160,6 +160,99 @@ function copy(id){var el=document.getElementById(id);navigator.clipboard.writeTe
 </body>
 </html><!-- Video -->
 <div class="section">
+<h2 id="videoTitle">🎥 English Demo</h2>
+
+<video controls poster="A4.jpg" style="width:100%;max-width:800px;border-radius:18px;display:block;margin:0 auto;border:1px solid var(--border)">
+<source src="lv_0_20260528192557.mp4" type="video/mp4">
+متصفحك لا يدعم الفيديو
+</video>
+
+<div style="text-align:center;margin-top:15px">
+<a href="https://t.me/assm_mssto" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--teal);color:var(--teal);padding:10px 20px;border-radius:12px;text-decoration:none;font-size:.9rem">
+📨 Watch on Telegram
+</a>
+</div>
+</div>
+
+<!-- Features --><div class="section">
+<h2 id="featTitle">✨ لماذا D-Map؟</h2>
+<div class="grid grid2">
+<div class="card"><div class="icon">🔴</div><h3 id="f1t">الملفات الخطرة</h3><p id="f1d">اللي يعتمد عليها المشروع كله</p></div>
+<div class="card"><div class="icon">⚪</div><h3 id="f2t">الكود الميت</h3><p id="f2d">ملفات معزولة — نظف مشروعك</p></div>
+<div class="card"><div class="icon">🟠</div><h3 id="f3t">الاعتماديات</h3><p id="f3d">من يعتمد على من بخطوط مباشرة</p></div>
+<div class="card"><div class="icon">🧠</div><h3 id="f4t">تحليل AI</h3><p id="f4d">جودة + ثغرات + توصيات</p></div>
+<div class="card"><div class="icon">🔒</div><h3 id="f5t">أمان كامل</h3><p id="f5d">100% محلي — كودك ما يطلع</p></div>
+<div class="card"><div class="icon">📱</div><h3 id="f6t">تطبيق جوال</h3><p id="f6d">PWA — ثبته على شاشتك</p></div>
+</div>
+</div>
+
+<!-- Gallery -->
+<div class="section">
+<h2 id="galleryTitle">🖼️ من داخل النظام</h2>
+<div class="gallery">
+<img src="A1.jpg" alt="Map" onclick="openImg(this.src)">
+<img src="A2.jpg" alt="AI" onclick="openImg(this.src)">
+<img src="A3.jpg" alt="Grid" onclick="openImg(this.src)">
+<img src="A4.jpg" alt="Concentric" onclick="openImg(this.src)">
+</div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="this.classList.remove('show')"><img id="lightboxImg" src=""></div>
+
+<!-- Payment -->
+<div class="section">
+<h2 id="payTitle">💳 النسخة الكاملة</h2>
+<div class="price-card">
+<div class="price">$99</div>
+<p style="color:#888;margin:8px 0" id="paySub">دفعة واحدة — كود مصدري + شرح + دعم</p>
+
+<div class="wallet-btn" onclick="toggleWallet('w1')">
+⚡ Trust Wallet / Binance (BEP20)
+</div>
+<div class="wallet-detail" id="w1">
+<code>TGZWQ6w9R8ACF3eFqzTFiwDLhLezBctR7K</code>
+<button class="btn-sm" onclick="event.stopPropagation();copy('c1')">📋 نسخ</button>
+<span id="c1" style="display:none">TGZWQ6w9R8ACF3eFqzTFiwDLhLezBctR7K</span>
+</div>
+
+<div class="wallet-btn" onclick="toggleWallet('w2')">
+🏦 شام كاش (داخل سوريا)
+</div>
+<div class="wallet-detail" id="w2">
+<code>425ad1ce921703499a045ebbccede17c</code>
+<button class="btn-sm" onclick="event.stopPropagation();copy('c2')">📋 نسخ</button>
+<span id="c2" style="display:none">425ad1ce921703499a045ebbccede17c</span>
+</div>
+
+<p style="color:#888;margin-top:15px;font-size:.85rem" id="payNote">بعد الدفع تواصل على تلغرام لاستلام النسخة</p>
+</div>
+</div>
+
+<!-- Contact -->
+<div class="section" style="text-align:center">
+<h2 id="contactTitle">📩 تواصل</h2>
+<div class="social">
+<a href="https://wa.me/963930322406">💬</a>
+<a href="mailto:assmm944@gmail.com">📧</a>
+<a href="https://t.me/assmMssto">📨</a>
+</div>
+</div>
+
+<div class="footer">© 2026 D-Map by AssmMssto</div>
+
+<script>
+var lang="ar";
+var T={ar:{tagline:"افهم اعتماديات مشروعك البرمجي في ثوانٍ",videoTitle:"🎥 شروحات",featTitle:"✨ لماذا D-Map؟",f1t:"الملفات الخطرة",f1d:"اللي يعتمد عليها المشروع كله",f2t:"الكود الميت",f2d:"ملفات معزولة — نظف مشروعك",f3t:"الاعتماديات",f3d:"من يعتمد على من بخطوط مباشرة",f4t:"تحليل AI",f4d:"جودة + ثغرات + توصيات",f5t:"أمان كامل",f5d:"100% محلي — كودك ما يطلع",f6t:"تطبيق جوال",f6d:"PWA — ثبته على شاشتك",galleryTitle:"🖼️ من داخل النظام",payTitle:"💳 النسخة الكاملة",paySub:"دفعة واحدة — كود مصدري + شرح + دعم",payNote:"بعد الدفع تواصل على تلغرام لاستلام النسخة",contactTitle:"📩 تواصل"},en:{tagline:"Understand your project dependencies instantly",videoTitle:"🎥 Demos",featTitle:"✨ Why D-Map?",f1t:"Risky Files",f1d:"Heavily depended on",f2t:"Dead Code",f2d:"Isolated — clean them up",f3t:"Dependencies",f3d:"See who depends on who",f4t:"AI Analysis",f4d:"Quality + Security + Suggestions",f5t:"100% Local",f5d:"Your code stays on your machine",f6t:"Mobile Ready",f6d:"PWA — install on home screen",galleryTitle:"🖼️ Inside the system",payTitle:"💳 Full Version",paySub:"One-time — source + guide + support",payNote:"After payment contact Telegram for delivery",contactTitle:"📩 Contact"}};
+function switchLang(){lang=lang=="ar"?"en":"ar";document.documentElement.lang=lang;document.documentElement.dir=lang=="ar"?"rtl":"ltr";document.getElementById("langBtn").textContent=lang=="ar"?"🇬🇧":"🇸🇦";var t=T[lang];Object.keys(t).forEach(function(id){var el=document.getElementById(id);if(el)el.textContent=t[id]});}
+function openVideo(card,src){var v=card.querySelector("video");var btn=card.querySelector(".play-btn");v.src=src;v.style.display="block";btn.style.display="none";v.play();}
+function openImg(src){document.getElementById("lightboxImg").src=src;document.getElementById("lightbox").classList.add("show");}
+function toggleWallet(id){var el=document.getElementById(id);el.classList.toggle("show");}
+function copy(id){var el=document.getElementById(id);navigator.clipboard.writeText(el.innerText).then(function(){alert("✅ تم النسخ / Copied")});}
+</script>
+</body>
+</html><!-- Video -->
+<div class="section">
 <h2 id="videoTitle">🎥 شروحات</h2>
 <div class="video-grid">
 
